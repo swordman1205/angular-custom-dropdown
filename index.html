@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="/">
+    <title>Angular Dropdown Directive</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./src/css/style.css" rel="stylesheet">
+</head>
+
+<body ng-app="test-app" ng-controller="MainCtrl as vm">
+    <select-picker 
+    	ng-model="vm.selected" 
+    	options="vm.data" 
+    	display-field="name" 
+    	empty-text="Please select a value"
+    	select-option="vm.selectValue(value)">
+    </select-picker>
+
+    <p>Selected value is <strong>{{vm.selected.name}}</strong></p>
+
+    <script src="./node_modules/angular/angular.min.js"></script>
+    <script src="./src/js/app.module.js"></script>
+    <script src="./src/js/app.controller.js"></script>
+    <script src="./src/js/app.directive.js"></script>
+</body>
+
+</html>

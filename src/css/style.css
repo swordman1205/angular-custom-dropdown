@@ -1,0 +1,19 @@
+.select-picker {
+	cursor: pointer;
+}
+.select-picker .arrow {
+	position: absolute;
+	top: 8px;
+	right: 30px;
+	font-size: 20px;
+}
+.select-picker .selector {
+	margin-bottom: 0;
+}
+.select-picker input[disabled] {
+	cursor: pointer;
+}
+.select-picker .list-group-item:hover {
+	cursor: pointer;
+	background-color: #63D1F4;
+}
